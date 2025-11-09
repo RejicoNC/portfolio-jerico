@@ -1,0 +1,62 @@
+[
+  {
+    "id": 1,
+    "title": "Scène 3D avec Réact",
+    "description": "J'ai créé une scène en 3D grâce à Three JS dans le cadre d'un cours. J'ai récupéré des modèles 3D que j'ai mis en place pour la constitution de la scène.",
+  "image": "/images/scene3d.png",
+    "tags": ["React", "Javascript"],
+    "category": "frontend",
+    "liveUrl": "https://jericoscencereact.netlify.app/",
+    "githubUrl": "https://github.com/RejicoNC/reactsceneoriject"
+  },
+  {
+    "id": 2,
+    "title": "Application météo en Python",
+    "description": "J'ai créé une application python pour la météo en utilisant docker dans le cadre d'un cours sur l'hébergement",
+    "image": "https://images.pexels.com/photos/196644/pexels-photo-196644.jpeg?auto=compress&cs=tinysrgb&w=800",
+    "tags": ["Python", "Docker", "Linux"],
+    "category": "backend",
+    "liveUrl": null,
+    "githubUrl": "https://github.com/RejicoNC/weather-pyapp"
+  },
+  {
+    "id": 3,
+    "title": "Gestionnaire de Tâches",
+    "description": "Une application collaborative de gestion de tâches avec mises à jour en temps réel et fonctionnalités d'équipe.",
+    "image": "https://images.pexels.com/photos/3184339/pexels-photo-3184339.jpeg?auto=compress&cs=tinysrgb&w=800",
+    "tags": ["React", "Socket.io", "Express", "PostgreSQL"],
+    "category": "fullstack",
+    "liveUrl": "#",
+    "githubUrl": "#"
+  },
+  {
+    "id": 4,
+    "title": "Tableau de Bord Météo",
+    "description": "Un tableau de bord météo moderne avec cartes interactives, prévisions et belles visualisations de données.",
+    "image": "https://images.pexels.com/photos/186980/pexels-photo-186980.jpeg?auto=compress&cs=tinysrgb&w=800",
+    "tags": ["Vue.js", "D3.js", "API Integration"],
+    "category": "frontend",
+    "liveUrl": "#",
+    "githubUrl": "#"
+  },
+  {
+    "id": 5,
+    "title": "API Réseau Social",
+    "description": "API RESTful pour une plateforme sociale avec authentification, posts, commentaires et upload de fichiers.",
+    "image": "https://images.pexels.com/photos/3184360/pexels-photo-3184360.jpeg?auto=compress&cs=tinysrgb&w=800",
+    "tags": ["Node.js", "Express", "JWT", "Cloudinary"],
+    "category": "backend",
+    "liveUrl": "#",
+    "githubUrl": "#"
+  },
+  {
+    "id": 6,
+    "title": "Application Bancaire Mobile",
+    "description": "Application bancaire React Native avec authentification biométrique et transactions fluides.",
+    "image": "https://images.pexels.com/photos/3184432/pexels-photo-3184432.jpeg?auto=compress&cs=tinysrgb&w=800",
+    "tags": ["React Native", "Redux", "Firebase"],
+    "category": "mobile",
+    "liveUrl": "#",
+    "githubUrl": "#"
+  }
+]
