@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { ChevronDown, Code, Smartphone, Server, Database, Globe, Github, Linkedin, Mail, Menu, X, ArrowRight } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import ProfilePhoto from './ProfilePhoto';
-import ProfessionalStats from './ProfessionalStats';
+
 import { useDocumentTitle } from '../hooks/useDocumentTitle';
 
 const HomePage: React.FC = () => {
@@ -29,25 +29,30 @@ const HomePage: React.FC = () => {
 
   const featuredProjects = [
     {
-      title: "E-Commerce Platform",
-      description: "Plateforme e-commerce complète avec gestion d'inventaire en temps réel, processus de paiement sécurisé et tableau de bord administrateur.",
-      tech: ["React", "Spring Boot", "SQL", "PostgreSQL"],
-      image: "https://images.pexels.com/photos/230544/pexels-photo-230544.jpeg?auto=compress&cs=tinysrgb&w=800",
-      link: "#"
+      title: "Scène 3D avec React",
+      description: "Avec React et Three.js j'ai créé une scène en 3D interactive avec des animations fluides et des contrôles utilisateur.",
+      tech: ["React", "Three.js", "JavaScript"],
+      image: "/images/scene3d.png",
+      link: "https://jericoscencereact.netlify.app/",
+      github: "https://github.com/RejicoNC/reactsceneoriject",
+      category: "frontend"
     },
     {
-      title: "Application Web de Gestion", 
-      description: "Système de gestion d'entreprise avec authentification sécurisée, rapports avancés et interface utilisateur moderne.",
-      tech: ["Angular", "Symfony", "PHP", "MySQL"],
-      image: "https://images.pexels.com/photos/4968636/pexels-photo-4968636.jpeg?auto=compress&cs=tinysrgb&w=800",
-      link: "#"
+      title: "Prospeak AI",
+      description: "J'ai contribué à concevoir une application qui permet de créer sa campagne de pub avec l'IA",
+      tech: ["React", "Python", "AWS"],
+      image: "/images/prospeak.png",
+      link: "https://app.prospeak.ai/",
+      category: "fullstack"
     },
     {
-      title: "Dashboard Analytics",
-      description: "Tableau de bord d'analyse de données avec visualisations interactives et traitement de grandes quantités de données.",
-      tech: ["Vue.js", "Python", "SQL", "PostgreSQL"],
-      image: "https://images.pexels.com/photos/8386440/pexels-photo-8386440.jpeg?auto=compress&cs=tinysrgb&w=800",
-      link: "#"
+      title: "Jeu mobile",
+      description: "J'ai créé un jeu mobile avec Flutter dont le but est de sensibiliser les étudiants à leur comportement éco-responsable",
+      tech: ["Flutter"],
+      image: "/images/univert.png",
+      link: "https://sae501univert.netlify.app/",
+      github: "https://github.com/RejicoNC/sae501",
+      category: "mobile"
     }
   ];
 
@@ -153,11 +158,11 @@ const HomePage: React.FC = () => {
                   </span>
                 </h1>
                 <div className="text-2xl md:text-3xl text-gray-300 mb-4 font-light">
-                  Full-Stack Developer
+                  Développeur Full stack et mobile
                 </div>
                 <div className="w-24 h-1 bg-gradient-to-r from-yellow-400 to-gold-500 mx-auto lg:mx-0 mb-6"></div>
                 <p className="text-lg md:text-xl text-gray-300 mb-8 leading-relaxed max-w-2xl mx-auto lg:mx-0">
-                  Passionné par la création d'expériences web et mobile exceptionnelles avec des technologies de pointe et des principes de design moderne.
+                  Passionné par la création d'applications web et mobile avec des technologies modernes.
                 </p>
               </div>
               
@@ -206,7 +211,7 @@ const HomePage: React.FC = () => {
       </section>
 
       {/* Professional Stats Section */}
-      <ProfessionalStats />
+      
 
       {/* About Section */}
       <section id="about" className="py-20 relative">
@@ -216,8 +221,7 @@ const HomePage: React.FC = () => {
               À <span className="bg-gradient-to-r from-yellow-400 to-gold-500 bg-clip-text text-transparent">Propos</span>
             </h2>
             <p className="text-xl text-gray-300 max-w-3xl mx-auto leading-relaxed">
-              Développeur full-stack passionné avec plus de 5 ans d'expérience dans la création de solutions web et mobile innovantes. 
-              Je suis Jerico MURRAY, et je me spécialise dans la construction d'applications évolutives qui offrent des expériences utilisateur exceptionnelles.
+              Diplômé du BUT MMI en parcours dev j'ai pu faire des stages et des alternances qui m'ont permis de développer mes compétences en développement web et mobile en plus de mes cours pratiques.
             </p>
           </div>
 
@@ -226,16 +230,14 @@ const HomePage: React.FC = () => {
               <div className="bg-gradient-to-br from-white/10 to-white/15 p-6 rounded-2xl backdrop-blur-sm border border-white/20">
                 <h3 className="text-2xl font-semibold mb-4 text-yellow-400">Mon Parcours</h3>
                 <p className="text-gray-300 leading-relaxed">
-                  Commencé comme étudiant curieux en informatique, j'ai évolué pour devenir un développeur passionné qui aime résoudre des problèmes complexes 
-                  à travers du code élégant. Je crois en l'apprentissage continu et je reste à jour avec les dernières technologies.
+                   Je suis originaire de Houaïlou et métis Néo-Zélandais. J'ai continué mes études à l'IUT de Nouvelle-Calédonie en sachant que le développement web et mobile allait être ma vocation.
                 </p>
               </div>
               
               <div className="bg-gradient-to-br from-white/10 to-white/15 p-6 rounded-2xl backdrop-blur-sm border border-white/20">
                 <h3 className="text-2xl font-semibold mb-4 text-yellow-400">Ce Que Je Fais</h3>
                 <p className="text-gray-300 leading-relaxed">
-                  Je crée des solutions de bout en bout, du concept au déploiement. Qu'il s'agisse d'une application web responsive, 
-                  d'une app mobile, ou d'un système backend complexe, je me concentre sur un code propre, les performances et l'expérience utilisateur.
+                  Grâce à mes compétences et à mon expérience, je crée des applications web et mobile en choisissant la technologie la plus adaptée au besoin du client.
                 </p>
               </div>
             </div>
@@ -314,6 +316,30 @@ const HomePage: React.FC = () => {
                       </span>
                     ))}
                   </div>
+                  
+                  {/* Action Buttons */}
+                  <div className="flex gap-3 mt-4">
+                    {project.link && project.link !== "#" && (
+                      <a
+                        href={project.link}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="flex-1 px-4 py-2 bg-gradient-to-r from-yellow-400 to-gold-500 text-black font-semibold rounded-lg hover:from-yellow-300 hover:to-gold-400 transition-all duration-300 text-center text-sm"
+                      >
+                        Voir le projet
+                      </a>
+                    )}
+                    {project.github && (
+                      <a
+                        href={project.github}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="flex-1 px-4 py-2 border border-yellow-400 text-yellow-400 font-semibold rounded-lg hover:bg-yellow-400 hover:text-black transition-all duration-300 text-center text-sm"
+                      >
+                        Code
+                      </a>
+                    )}
+                  </div>
                 </div>
               </div>
             ))}
@@ -344,18 +370,18 @@ const HomePage: React.FC = () => {
           <div className="bg-gradient-to-br from-white/10 to-white/15 p-8 rounded-2xl backdrop-blur-sm border border-white/20 mb-8">
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
               <a
-                href="mailto:jerico.murray@example.com"
+                href="mailto:jericomurray@hotmail.com"
                 className="flex items-center justify-center p-4 bg-white/10 rounded-xl hover:bg-white/20 transition-all duration-300 group hover:scale-105"
               >
                 <Mail className="w-6 h-6 mr-3 group-hover:text-yellow-400 transition-colors" />
                 <div className="text-left">
                   <div className="text-sm text-gray-400">Email</div>
-                  <div className="font-semibold">jerico.murray@example.com</div>
+                  <div className="font-semibold">jericomurray@hotmail.com</div>
                 </div>
               </a>
               
               <a
-                href="https://github.com/jerico-murray"
+                href="https://github.com/RejicoNC/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center justify-center p-4 bg-white/10 rounded-xl hover:bg-white/20 transition-all duration-300 group hover:scale-105"
@@ -363,12 +389,12 @@ const HomePage: React.FC = () => {
                 <Github className="w-6 h-6 mr-3 group-hover:text-yellow-400 transition-colors" />
                 <div className="text-left">
                   <div className="text-sm text-gray-400">GitHub</div>
-                  <div className="font-semibold">@jerico-murray</div>
+                  <div className="font-semibold">@RejicoNC</div>
                 </div>
               </a>
               
               <a
-                href="https://linkedin.com/in/jerico-murray"
+                href="https://www.linkedin.com/in/jerico-murray-9b787226b/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center justify-center p-4 bg-white/10 rounded-xl hover:bg-white/20 transition-all duration-300 group hover:scale-105"
@@ -381,10 +407,6 @@ const HomePage: React.FC = () => {
               </a>
             </div>
           </div>
-
-          <button className="px-8 py-4 bg-gradient-to-r from-yellow-400 to-gold-500 text-black font-semibold rounded-full hover:from-yellow-300 hover:to-gold-400 transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-yellow-400/25">
-            Télécharger mon CV
-          </button>
         </div>
       </section>
 

@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { ExternalLink, Github, Search, Filter, Calendar} from 'lucide-react';
+import { ExternalLink, Github, Search, Filter } from 'lucide-react';
 import Navigation from './Navigation';
 import { useDocumentTitle } from '../hooks/useDocumentTitle';
 
@@ -47,81 +47,68 @@ const ProjectCatalog: React.FC = () => {
   const projects: Project[] = [
     {
       id: 1,
-      title: "E-Commerce Platform",
-      description: "Plateforme e-commerce complète avec gestion d'inventaire en temps réel, processus de paiement sécurisé et tableau de bord administrateur",
-      longDescription: "Une solution e-commerce full-stack robuste construite avec React et Spring Boot. Cette plateforme inclut un système de gestion d'inventaire en temps réel, un processus de paiement sécurisé, un tableau de bord administrateur complet, et une interface utilisateur moderne et responsive. Le projet utilise une base de données SQL pour la gestion des données et Spring Boot pour l'API REST.",
-      tech: ["React", "Spring Boot", "SQL", "PostgreSQL", "TypeScript", "Java"],
-      image: "https://images.pexels.com/photos/230544/pexels-photo-230544.jpeg?auto=compress&cs=tinysrgb&w=800",
-      githubLink: "https://github.com/jerico-murray/ecommerce-platform",
-      liveLink: "https://ecommerce-demo.jericomurray.dev",
+      title: "Scène 3D avec React",
+      description: "Avec React et Three.js j'ai créé une scène en 3D interactive avec des animations fluides et des contrôles utilisateur.",
+      longDescription: "Une scène 3D interactive développée avec React et Three.js, offrant des animations fluides et des contrôles utilisateur intuitifs. Ce projet démontre mes compétences en développement frontend moderne et en graphiques 3D pour le web. L'application utilise JavaScript pour créer une expérience immersive avec des modèles 3D, des effets visuels, et une interface responsive.",
+      tech: ["React", "Three.js", "JavaScript"],
+      image: "/images/scene3d.png",
+      githubLink: "https://github.com/RejicoNC/reactsceneoriject",
+      liveLink: "https://jericoscencereact.netlify.app/",
       category: "Web Development",
-      date: "2024-08-15",
+      date: "",
       featured: true
     },
     {
       id: 2,
-      title: "Système de Gestion d'Entreprise",
-      description: "Application web de gestion complète avec Symfony et PHP incluant gestion des employés, projets, facturation et rapports analytiques",
-      longDescription: "Système complet de gestion d'entreprise développé avec Symfony et PHP. L'application inclut la gestion des employés, des projets, de la facturation, et des rapports analytiques. Utilise MySQL pour le stockage des données et Twig pour les templates. Intègre l'authentification sécurisée et un système de permissions granulaire.",
-      tech: ["Symfony", "PHP", "MySQL", "SQL", "Twig", "Bootstrap"],
-      image: "https://images.pexels.com/photos/4968636/pexels-photo-4968636.jpeg?auto=compress&cs=tinysrgb&w=800",
-      githubLink: "https://github.com/jerico-murray/gestion-entreprise",
-      liveLink: "https://gestion-demo.jericomurray.dev",
-      category: "Web Development",
-      date: "2024-06-20",
-      featured: true
+      title: "Application de météo",
+      description: "Avec Docker j'ai créé une application Python pour voir la météo actuelle à l'aide d'une API",
+      longDescription: "Application météo développée en Python utilisant Docker pour la conteneurisation. Cette application utilise une API météo pour fournir des informations météorologiques actuelles. Le projet démontre mes compétences en développement backend, en conteneurisation avec Docker, et en intégration d'APIs externes. L'architecture est conçue pour être facilement déployable et scalable.",
+      tech: ["Python", "Docker"],
+      image: "/images/placeholder.jpg",
+      githubLink: "https://github.com/RejicoNC/weather-pyapp",
+      liveLink: "#",
+      category: "Backend Development",
+      date: "",
+      featured: false
     },
     {
       id: 3,
-      title: "Dashboard Analytics avec Vue.js",
-      description: "Tableau de bord d'analyse de données interactif",
-      longDescription: "Dashboard moderne développé avec Vue.js pour l'analyse de données en temps réel. Intègre Python pour le traitement backend des données, avec des visualisations interactives et des rapports personnalisables. Utilise PostgreSQL pour le stockage des données et des API REST pour la communication entre le frontend et backend.",
-      tech: ["Vue.js", "Python", "PostgreSQL", "SQL", "Chart.js", "FastAPI"],
-      image: "https://images.pexels.com/photos/1396122/pexels-photo-1396122.jpeg?auto=compress&cs=tinysrgb&w=800",
-      githubLink: "https://github.com/jerico-murray/vue-dashboard",
-      liveLink: "https://dashboard-demo.jericomurray.dev",
+      title: "Application de devise monétaire",
+      description: "Avec Vue.js et une API j'ai pu faire un convertisseur de devise.",
+      longDescription: "Convertisseur de devises moderne développé avec Vue.js et intégrant une API de change en temps réel. Cette application permet aux utilisateurs de convertir rapidement entre différentes devises avec des taux de change actualisés. Le projet utilise Vue.js pour créer une interface utilisateur réactive et intuitive, démontrant mes compétences en développement frontend et en intégration d'APIs.",
+      tech: ["Vue.js"],
+      image: "/images/currency.png",
+      githubLink: "https://github.com/RejicoNC/Currency-app",
+      liveLink: "https://currency-appbyrejiconc.netlify.app/",
       category: "Web Development",
-      date: "2024-05-10",
+      date: "",
       featured: false
     },
     {
       id: 4,
-      title: "Application Mobile React Native",
-      description: "App mobile multiplateforme avec authentification",
-      longDescription: "Application mobile développée avec React Native, offrant une expérience native sur iOS et Android. Inclut l'authentification utilisateur, la synchronisation de données, les notifications push, et une interface utilisateur moderne. Utilise Firebase pour le backend et SQLite pour le stockage local.",
-      tech: ["React Native", "TypeScript", "Firebase", "SQLite", "Redux", "Expo"],
-      image: "https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&cs=tinysrgb&w=800",
-      githubLink: "https://github.com/jerico-murray/react-native-app",
-      liveLink: "#",
+      title: "Jeu mobile",
+      description: "J'ai créé un jeu mobile avec Flutter dont le but est de sensibiliser les étudiants à leur comportement éco-responsable",
+      longDescription: "Jeu mobile éducatif développé avec Flutter pour sensibiliser les étudiants aux comportements éco-responsables. Ce projet combine ludique et pédagogie pour encourager les bonnes pratiques environnementales. L'application utilise Flutter pour offrir une expérience native sur iOS et Android, avec des mécaniques de jeu engageantes et des messages éducatifs sur l'écologie.",
+      tech: ["Flutter"],
+      image: "/images/univert.png",
+      githubLink: "https://github.com/RejicoNC/sae501",
+      liveLink: "https://sae501univert.netlify.app/",
       category: "Mobile Development",
-      date: "2024-04-05",
-      featured: false
-    },
-    {
-      id: 5,
-      title: "API REST avec Spring Boot",
-      description: "API robuste pour applications d'entreprise",
-      longDescription: "API REST complète développée avec Spring Boot et Java. Implémente les meilleures pratiques de sécurité, la documentation automatique avec Swagger, la gestion des erreurs, et l'optimisation des performances. Utilise Spring Security pour l'authentification JWT et PostgreSQL comme base de données principale.",
-      tech: ["Spring Boot", "Java", "PostgreSQL", "SQL", "JWT", "Swagger"],
-      image: "https://images.pexels.com/photos/8386440/pexels-photo-8386440.jpeg?auto=compress&cs=tinysrgb&w=800",
-      githubLink: "https://github.com/jerico-murray/springboot-api",
-      liveLink: "https://api-demo.jericomurray.dev",
-      category: "Backend Development",
-      date: "2024-03-12",
+      date: "",
       featured: true
     },
     {
-      id: 6,
-      title: "Application Angular Enterprise",
-      description: "SPA complexe avec Angular et TypeScript",
-      longDescription: "Application web complexe développée avec Angular et TypeScript. Utilise les dernières fonctionnalités d'Angular comme les Standalone Components, Signals, et le nouveau système de routing. Intègre des tests unitaires avec Jasmine/Karma et des tests e2e avec Cypress.",
-      tech: ["Angular", "TypeScript", "RxJS", "Angular Material", "Cypress", "Jasmine"],
-      image: "https://images.pexels.com/photos/4162449/pexels-photo-4162449.jpeg?auto=compress&cs=tinysrgb&w=800",
-      githubLink: "https://github.com/jerico-murray/angular-enterprise",
-      liveLink: "https://angular-demo.jericomurray.dev",
+      id: 5,
+      title: "Prospeak AI",
+      description: "J'ai contribué à concevoir une application qui permet de créer sa campagne de pub avec l'IA",
+      longDescription: "Application innovante utilisant l'intelligence artificielle pour créer des campagnes publicitaires personnalisées. J'ai contribué à la conception et au développement de cette solution qui combine React pour l'interface utilisateur, Python pour les algorithmes d'IA, et AWS pour l'infrastructure cloud. Cette plateforme permet aux entreprises de générer automatiquement du contenu publicitaire adapté à leur audience cible.",
+      tech: ["React", "Python", "AWS"],
+      image: "/images/prospeak.png",
+      githubLink: "#",
+      liveLink: "https://app.prospeak.ai/",
       category: "Web Development",
-      date: "2024-02-28",
-      featured: false
+      date: "",
+      featured: true
     }
   ];
 
@@ -180,11 +167,6 @@ const ProjectCatalog: React.FC = () => {
               <span className="px-3 py-1 bg-yellow-400/20 text-yellow-400 rounded-full text-sm">
                 {project.category}
               </span>
-            </div>
-            
-            <div className="flex items-center text-gray-400 mb-6">
-              <Calendar className="w-4 h-4 mr-2" />
-              <span>{new Date(project.date).toLocaleDateString('fr-FR')}</span>
             </div>
             
             <p className="text-gray-300 text-lg leading-relaxed mb-6">
@@ -404,9 +386,6 @@ const ProjectCatalog: React.FC = () => {
                     </div>
                     
                     <div className="flex items-center justify-between">
-                      <span className="text-gray-400 text-sm">
-                        {new Date(project.date).toLocaleDateString('fr-FR')}
-                      </span>
                       <div className="flex gap-2">
                         <ExternalLink className="w-4 h-4 text-yellow-400 opacity-0 group-hover:opacity-100 transition-opacity" />
                       </div>

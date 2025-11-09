@@ -2,7 +2,34 @@
 
 ## 🎯 À propos
 
-Portfolio professionnel de **Jerico MURRAY**, développeur Full-Stack passionné avec plus de 5 ans d'expérience dans la création d'applications web et mobiles innovantes.
+Portfolio professionnel de **Jerico MURRAY**, développeur Full-Stack et mobile diplômé du BUT MMI en parcours développement. Spécialisé dans la création d'applications web et mobiles modernes avec des technologies innovantes.
+
+## ✨ Projets Phares
+
+### 🌐 Projets Réalisés
+
+1. **Scène 3D avec React** - Scène interactive 3D avec Three.js
+   - Technologies: React, Three.js, JavaScript
+   - [Démo en ligne](https://jericoscencereact.netlify.app/)
+   - [Code source](https://github.com/RejicoNC/reactsceneoriject)
+
+2. **Prospeak AI** - Application d'IA pour campagnes publicitaires
+   - Technologies: React, Python, AWS
+   - [Application](https://app.prospeak.ai/)
+
+3. **Jeu Mobile** - Jeu éducatif éco-responsable avec Flutter
+   - Technologies: Flutter
+   - [Démo en ligne](https://sae501univert.netlify.app/)
+   - [Code source](https://github.com/RejicoNC/sae501)
+
+4. **Application de météo** - Application Python containerisée
+   - Technologies: Python, Docker
+   - [Code source](https://github.com/RejicoNC/weather-pyapp)
+
+5. **Application de devise monétaire** - Convertisseur de devises
+   - Technologies: Vue.js
+   - [Démo en ligne](https://currency-appbyrejiconc.netlify.app/)
+   - [Code source](https://github.com/RejicoNC/Currency-app)
 
 ## ✨ Caractéristiques du Design
 
@@ -19,24 +46,37 @@ Portfolio professionnel de **Jerico MURRAY**, développeur Full-Stack passionné
 - **Scrollbar personnalisée** avec thème doré
 - **Particules flottantes** autour du cadre photo
 
-### 📊 Section Statistiques
-- Compteurs animés pour les réalisations professionnelles
-- Icons Lucide avec effets hover
-- Design responsive grid
-
 ### 🎯 Sections Principales
 1. **Hero Section** - Présentation avec photo encadrée
-2. **Statistiques** - Métriques professionnelles
-3. **À Propos** - Parcours et compétences
-4. **Projets** - Portfolio de réalisations
-5. **Contact** - Informations de contact professionnelles
+2. **À Propos** - Parcours et compétences techniques
+3. **Projets Phares** - Aperçu des 3 meilleurs projets
+4. **Contact** - Informations de contact professionnelles
+5. **Catalogue de Projets** - Page dédiée avec tous les projets
 
-## 🛠️ Technologies Utilisées
+## 🛠️ Compétences Techniques
+
+### Frontend
+- React, Angular, Vue.js, TypeScript
+
+### Backend  
+- Spring Boot, Symfony, Python, PHP
+
+### Database
+- SQL, PostgreSQL, MySQL, MongoDB
+
+### Mobile
+- React Native, Flutter, Progressive Web Apps, Responsive Design
+
+### Autres
+- Docker, AWS, Three.js, API Integration
+
+## 🛠️ Technologies du Portfolio
 
 - **React 18** avec TypeScript
 - **Tailwind CSS** pour le styling
 - **Lucide React** pour les icônes
 - **Vite** comme bundler
+- **React Router** pour la navigation
 - **CSS Animations** personnalisées
 
 ## 🎨 Palette de Couleurs
@@ -44,7 +84,7 @@ Portfolio professionnel de **Jerico MURRAY**, développeur Full-Stack passionné
 ```css
 /* Couleurs principales */
 --gold-400: #fbbf24;
---gold-500: #f59e0b;
+--gold-500: #f59e0b;  
 --gold-600: #d97706;
 --background: gradient-to-br from-black via-gray-900 to-black;
 ```
@@ -74,40 +114,47 @@ npm run build
 ```
 src/
 ├── components/
-│   ├── ProfilePhoto.tsx    # Composant photo de profil encadrée
-│   └── ProfessionalStats.tsx # Statistiques professionnelles
-├── assets/                 # Images et ressources
-├── App.tsx                # Composant principal
-├── index.css              # Styles globaux et animations
-└── main.tsx               # Point d'entrée
+│   ├── HomePage.tsx          # Page d'accueil avec projets phares
+│   ├── ProjectCatalog.tsx    # Catalogue complet des projets
+│   ├── ProfilePhoto.tsx      # Composant photo de profil encadrée
+│   ├── Navigation.tsx        # Navigation responsive
+│   └── Header.tsx           # En-tête du site
+├── data/
+│   └── projects.json        # Données des projets
+├── hooks/
+│   └── useDocumentTitle.ts  # Hook pour les titres de page
+├── pages/                   # Pages de l'application
+├── App.tsx                  # Composant principal avec router
+├── index.css               # Styles globaux et animations
+└── main.tsx                # Point d'entrée
 ```
 
-## 🎯 Fonctionnalités Professionnelles
+## 🎯 Fonctionnalités
 
 ### 🖼️ Photo de Profil Encadrée
 - Cadre doré avec animation glow
-- Éléments décoratifs flottants
-- Badge "Available for Hire"
+- Éléments décoratifs flottants  
 - Effets hover sophistiqués
+- Fallback avec initiales stylisées
 
-### 📈 Métriques Professionnelles
-- 50+ Clients Satisfaits
-- 100+ Projets Complétés
-- 5+ Années d'Expérience
-- 99% Satisfaction Client
+### 📈 Navigation et UX
+- Navigation smooth scroll
+- Titres de page dynamiques ("Portfolio - Jerico MURRAY")
+- Modal détaillé pour chaque projet
+- Filtres par catégorie et recherche
 
 ### 🎨 Animations Personnalisées
 - `animate-fade-in` - Apparition progressive
-- `animate-glow` - Effet lumineux
+- `animate-glow` - Effet lumineux sur le cadre
 - `animate-bounce` - Éléments flottants
 - `gradient-shift` - Gradient animé
 
 ## 📞 Contact
 
 **Jerico MURRAY**
-- 📧 Email: jerico.murray@example.com
-- 💼 LinkedIn: [Jerico MURRAY](https://linkedin.com/in/jerico-murray)
-- 🔗 GitHub: [@jerico-murray](https://github.com/jerico-murray)
+- 📧 Email: [jericomurray@hotmail.com](mailto:jericomurray@hotmail.com)
+- 💼 LinkedIn: [Jerico MURRAY](https://www.linkedin.com/in/jerico-murray-9b787226b/)
+- 🔗 GitHub: [@RejicoNC](https://github.com/RejicoNC/)
 
 ---
 
