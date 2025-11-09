@@ -161,4 +161,11 @@ const Projects = () => {
             transition={{ duration: 0.8 }}
             viewport={{ once: true }}
           >
-      
+          </motion.div>
+        </div>
+      </section>
+    </div>
+  );
+};
+
+export default Projects;

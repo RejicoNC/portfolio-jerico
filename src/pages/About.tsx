@@ -155,4 +155,12 @@ const About = () => {
                 <div className="text-4xl font-bold text-gold mb-2">{stat.number}</div>
                 <div className="text-gray-300 font-medium">{stat.label}</div>
               </motion.div>
-        
+            ))}
+          </div>
+        </div>
+      </section>
+    </div>
+  );
+};
+
+export default About;
